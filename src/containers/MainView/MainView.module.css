@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+.MainView {
+    /* padding-left: 2.5rem; */
+    /* overflow-x: hidden; */
+    color: white;
+}
+
+.Loading {
+    display: flex;
+    justify-content: center;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 3rem;
+    color: #D81F26;
+    margin-bottom: 5rem;
+    animation: pulse 1s infinite;
+}
+
+.Failure {
+    display: flex;
+    justify-content: center;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 3rem;
+    color: #D81F26;
+    margin-bottom: 10px;
+}
+
+.CheckBack {
+    color: #808080;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.YouTubeRefreshToggle {
+    width: 200px;
+    height: 2px;
+    /* background-color: red; */
+    margin: -1.5rem auto 1rem;
+    cursor: pointer;
+}
+
+.YouTubeRefreshContainer {
+    /* display: flex; */
+    position: relative;
+    width: 325px;
+    margin: 0 auto 1rem;
+    font-size: 0.75rem;
+    color: white;
+}
+
+.YouTubeRefreshRow {
+    display: flex;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.YouTubeRefreshButton {
+    margin: 0 5px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}

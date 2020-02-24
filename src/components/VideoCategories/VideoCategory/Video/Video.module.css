@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+.VideoContainer {
+    margin: 0 0.15rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 19rem;
+    /* cursor: default; */
+}
+
+.VideoInnerContainer {
+    width: 100%;
+    cursor: pointer;
+}
+
+.ExpandingContainer {
+    position: relative;
+}
+
+/* Netflix thumbnail: 176px x 247px; 1.40340909... height to width */
+
+.VideoThumb {
+    width: 12.5rem; /* width of container 12.5 previously */
+    height: 16.9rem; /* height of container 16.9 previously */
+    object-fit: none;
+    transform: translate3d(0, 0, 0);
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+}
+
+.VideoThumb:hover {
+    /* Matching sizes: height: 16.9rem; width: 22.6rem; */
+    position: relative;
+    height: 20.8em; /* 19 before */
+    width: 37rem; /* 30.74 before */
+    object-fit: cover;
+    transform: translate3d(0, 0, 0);
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+}
+
+.VideoOverlayContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%; /* This behavior has been weird. Previously, 98.8% covered it with no overlap. Now it's 100%. */
+    opacity: 0.5;
+    transition: opacity 150ms;
+    transition-delay: 100ms;
+    pointer-events: none;
+}
+
+.hideContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    width: 100%;
+    height: 98.8%;
+    transition: opacity 150ms;
+    transition-delay: 100ms;
+}
+
+.VideoOverlayContent {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1.5rem;
+    width: 80%;
+    opacity: 1;
+    transition: opacity 350ms;
+    transition-delay: 500ms;   
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    pointer-events: none;
+    /* Solution to prevent the overlay content function from triggering when you mouse over this content 
+        from: https://stackoverflow.com/questions/350639/how-to-disable-mouseout-events-triggered-by-child-elements
+        and: https://stackoverflow.com/questions/4697758/prevent-onmouseout-when-hovering-child-element-of-the-parent-absolute-div-withou/18837002#18837002
+        and: https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
+       This may prevent click events from working, so I might have to refactor later.
+    */
+}
+
+.hideContent {
+    position: absolute; /* TODO: Refactor to avoid repeating all this CSS. Will need to add and remove a .hide class dynamically. */
+    bottom: 1.5rem;
+    left: 0.5rem;
+    width: 80%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 150ms;
+    transition-delay: 0ms; 
+    overflow: none;
+}
+
+.playIcon {
+    width: 64px;
+    position: relative;
+    left: -0.3rem;
+}

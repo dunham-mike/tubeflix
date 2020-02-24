@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+.VideoCategory {
+    position: relative;
+    margin-bottom: 2.3rem;
+    margin-left: 2.5rem;
+}
+
+.VideoCategoryTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #e5e5e5;
+}
+
+.Videos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Carets {
+    position: absolute;
+    width: 100%;
+}
+
+.LeftCaretContainer {
+    position: absolute;
+    top: 1.05rem;
+    left: -2.5rem;
+    z-index: 100;
+    height: 16.9rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CaretBackground {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.2;
+}
+
+.LeftCaret {
+    position: absolute;
+    width: 1.2rem;
+}
+
+.RightCaretContainer {
+    position: absolute;
+    top: 1.05rem;
+    right: 0;
+    z-index: 100;
+    height: 16.9rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RightCaret {
+    position: absolute;
+    width: 1.2rem;
+}

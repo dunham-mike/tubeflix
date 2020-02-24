@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:700&display=swap');
+
+.Header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    background-image: linear-gradient(rgba(20,20,20,1), rgba(20,20,20,0));
+    transition: background-color 750ms;
+    align-items: center;
+    display: flex;
+}
+
+.Opaque {
+    background-color: #141414;
+    transition: background-color 250ms;
+}
+
+.FullLogo {
+    position: relative;
+    left: 2.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.LogoImage {
+    padding: 0 5px;
+    height: 40px;
+}
+
+.LogoText {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 3rem;
+    color: #D81F26;
+    margin-right: 2.5rem;
+}
+
+.Links {
+    height: 100%;
+    color: #fff;
+    z-index: 500;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+}
+
+.Link {
+    position: relative;
+    margin-left: 2.5rem;
+}
+
+.Link a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 400ms ease;
+}
+.Link a:hover {
+    text-decoration: none;
+    color: #e5e5e5;
+    transition: color 400ms ease;
+}
+
+.RightSide {
+    position: absolute;
+    height: 100%;
+    right: 2.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.SmileIcon {
+    height: 2.2rem;
+}
+
+.DownCaret {
+    height: 10px;
+    margin-left: 0.7rem;
+}
+
+.UserInfoContainer {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    height: 21rem;
+    width: 12rem;
+    opacity: 1;
+    transition: opacity 250ms;
+}
+
+.UserInfoContent {
+    position: absolute;
+    top: 0.7rem;
+    width: 100%;
+    height: 100%;
+}
+
+.UserInfoBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #141414;
+    opacity: 0.75;
+}
+
+.UpCaret {
+    position: absolute;
+    right: 1.92rem;
+    top: -0.2rem;
+    /* width: 100%; */
+    /* color: white; */
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.Hide {
+    opacity: 0;
+}
+
+@media (max-width: 900px) {
+    .Links {
+        font-size: 0.8rem;
+    }
+
+    .Link {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .Links {
+        font-size: 0.7rem;
+    }
+
+    .Link {
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .Links {
+        display: none;
+    }
+}

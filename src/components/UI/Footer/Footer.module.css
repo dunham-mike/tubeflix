@@ -1,0 +1,37 @@
+.Footer {
+    width: 350px;
+    margin: 0 auto;
+    color: #808080;
+    /* font-weight: bold; */
+    /* padding-left: 1rem; */
+    text-align: center;
+}
+
+a {
+    color: #808080;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #808080;
+    text-decoration: underline;
+}
+
+.SocialIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+
+.SocialIcon {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.GithubIcon {
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

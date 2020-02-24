@@ -1,0 +1,49 @@
+.Modal {
+    position: fixed;
+    z-index: 1000;
+    width: 86%;
+    height: 86%;
+    left: 7%;
+    top: 7%;
+    opacity: 1;
+    animation-name: fadeInTo100;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    background-color: black;
+}
+
+.Backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 900;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.6;
+    animation-name: fadeInTo60;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+/* Based on example from: https://stackoverflow.com/questions/11660710/css-transition-fade-in */
+
+@keyframes fadeInTo100 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTo60 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
