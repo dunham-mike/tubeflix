@@ -263,7 +263,7 @@ class MainView extends Component {
     }
 
     getDatabaseVideoCategoriesData = () => {
-        axios.get('https://react-burger-builder-83547.firebaseio.com/videoCategories.json')
+        axios.get('/videoCategories.json')
             .then(response => {
                 console.log('[Firebase] Received videoCategories data');
                 const latestVideoCategories = response.data[Object.keys(response.data).reverse()[0]];
@@ -279,7 +279,7 @@ class MainView extends Component {
     }
 
     getDatabaseMostPopularVideosByCategoryData = () => {
-        axios.get('https://react-burger-builder-83547.firebaseio.com/mostPopularVideosByCategory.json')
+        axios.get('/mostPopularVideosByCategory.json')
             .then(response => {
                 console.log('[Firebase] Received mostPopularVideosByCategory data');
                 const mostPopularVideosByCategory = response.data[Object.keys(response.data).reverse()[0]];
@@ -296,7 +296,7 @@ class MainView extends Component {
     }
 
     getDatabaseMostPopularIndividualVideos = () => {
-        axios.get('https://react-burger-builder-83547.firebaseio.com/mostPopularIndividualVideos.json')
+        axios.get('/mostPopularIndividualVideos.json')
             .then(response => {
                 console.log('[Firebase] Received mostPopularIndividualVideos data');
                 const mostPopularIndividualVideos = response.data[Object.keys(response.data).reverse()[0]];
