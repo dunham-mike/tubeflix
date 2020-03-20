@@ -13,7 +13,6 @@ class Header extends Component {
     }
 
     activateUserInfo = () => {
-        console.log('Function activated!');
         this.setState({displayUserInfo: true});
     }
 
@@ -57,14 +56,13 @@ class Header extends Component {
                 <div className={classes.RightSide} onMouseEnter={this.activateUserInfo} onMouseLeave={this.deactivateUserInfo}>
                     <img src={smileIcon} className={classes.SmileIcon} alt='smile-icon' />
                     <img src={downCaret} className={classes.DownCaret} alt='down-caret' />
-                    <div className={userInfoContainerClasses.join(' ')}>
-                        <img src={downCaret} className={classes.UpCaret} alt='up-caret' />
-                        <div className={classes.UserInfoContent}>
-                            <div className={classes.UserInfoBackground}></div>
-                            <UserInfo />
-                    </div>
-                   
                 </div>
+                <div className={userInfoContainerClasses.join(' ')}>
+                    <img src={downCaret} className={classes.UpCaret} alt='up-caret' />
+                    <div className={classes.UserInfoContent}>
+                        <div className={classes.UserInfoBackground}></div>
+                        <UserInfo />
+                    </div>
                 </div>
             </div>
         );
