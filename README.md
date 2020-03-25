@@ -1,6 +1,3 @@
-<p align="center">
-  
-</p>
 <h1 align="center">
   <a href="https://tube-flix.web.app/">
     <img alt="Tubeflix" src="public/favicon-32x32.png" width="24" />
