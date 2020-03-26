@@ -9,7 +9,7 @@
 </h3>
 <div align="center">
   <a href="https://tube-flix.web.app/">
-    <img alt="Tubeflix Screenshot" src="public/tubeflix.png" height="300" />
+    <img alt="Tubeflix Screenshot" src="public/tubeflix.png" style="max-height: 300px" />
   </a>
 </div>
 
